@@ -1,0 +1,169 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+
+    .about-containers {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+   #desktop-nav {
+    display: none;
+   }
+
+   #hamburger-nav {
+    display: flex;
+   }
+
+   #experience,
+   .experience-details-container {
+    margin-top: 2rem;
+   }
+
+   #profile,
+   .section-container {
+    display: block;
+   }
+
+   .arrow {
+    display: none;
+   }
+
+   section,
+   .section-container {
+    height: fit-content;
+   }
+
+   section {
+    margin: 0 5%;
+   } 
+
+   .section__pic-containter {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+   }
+
+   .about-containers {
+    margin-top: 0;
+   }
+
+   /* EDIT FOOTER PERSONALLY   */
+   #footer {
+    display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #contact, footer {
+        height: 40vh;
+    }
+
+    #profile {
+        height: 83vh;
+        margin: 2rem 0;
+    }
+
+    article {
+        font-size: 1rem;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+    } 
+
+    .details-container h3 {
+        font-size: 1.75rem;
+    }
+    .details-container p {
+        font-size: 1rem;
+    }
+
+    .contanct-info-container {
+        margin: 0;
+    }
+
+    .contanct-info-container p, 
+    .nav-links li a {
+        font-size: 1rem;
+    }
+
+    .experience-sub-title {
+        font-size: 2rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        margin-top: 2vh;
+    }
+
+    .hamburger-menu {
+        margin-top: 2vh;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .section__pic-containter {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+
+    .section__text__pz {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text-container {
+        text-align: justify;
+        font-size: 1.25rem;
+    }
+
+    .timeline::after {
+        left: 31px;
+      }
+    
+      .timeline-container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+    
+    /* Make sure that all arrows are pointing leftwards */
+      .timeline-container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+    
+    /* Make sure all circles are at the same spot */
+      .left::after, .right::after {
+        left: 17px;
+      }
+    
+    /* Make all right containers behave like the left ones */
+      .right {
+        left: 0%;
+      }
+}
+

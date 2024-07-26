@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- ==================== GOOGLE FONTS ==================== -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Grandiflora+One&display=swap" rel="stylesheet">
+ 
+     <!-- ==================== BOX ICONS ==================== -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ 
+    <!-- ==================== WEBSITE TITLE ====================-->   
+    <title>Michael's Portfolio</title>
+
+     <!-- ==================== CSS ==================== -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <nav id="desktop-nav">
+        <div class="logo">michael femi-lawal</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">michael femi-lawal</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">about</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="profile">
+        <div class="section__pic-containter">
+            <img src="./assets/profile-pic.jpg" alt="michael femi-lawal profile pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Michael Femi-Lawal</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+                    My Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My LinkedIn Profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/femilawalmichael/' "
+                />
+                <img 
+                src="./assets/github.png" 
+                alt="My Github Profile" 
+                class="icon" 
+                onclick="location.href='https://github.com/michae1fl' "
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-containter">
+                <img src="./assets/about-me.jpeg" 
+                alt="Profile Picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/graduation-solid-24.png"
+                        alt="Education Icon"
+                        class="icon"
+                        />
+                        <h3>Baylor University</h3>
+                        <p>2022 - 2024<br/>B.Sc. in Computer Science</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/graduation-solid-24.png"
+                        alt="Education Icon"
+                        class="icon"
+                        />
+                        <h3>University of North Texas</h3>
+                        <p>2024 - 2026<br/>B.Sc. in Software Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am a passionate computer science candidate specializing in software engineering, 
+                        currently in my third year at the University of North Texas. Based in Dallas, Texas, 
+                        I am dedicated to leveraging my expertise in development, collaboration, and best 
+                        practices to swiftly resolve software issues, enhance operational efficiency, and drive 
+                        future system upgrades. Growing up in Nigeria, I witnessed the digital divide firsthand, 
+                        which has fueled my desire to use the knowledge and skills I gain to bridge this gap in 
+                        my home country. As a proven team player and leader, I am known for my effective 
+                        communication and multitasking skills. I look forward to connecting with professionals 
+                        and sharing my journey and technical growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section id="experience">
+        <h1 class="title">My Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>C++</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-container left">
+              <div class="content">
+                <h2>Headstarter AI</h2>
+                <h3>SWE Fellow</h3>
+                <h5>July 2024 - Present</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos repudiandae, explicabo sed facilis hic totam assumenda atque quo quidem officiis magni voluptate eius? Non unde facilis accusantium saepe reiciendis rerum!</p>
+              </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="content">
+                    <h2>Scale AI</h2>
+                    <h3>AI Consultant</h3>
+                    <h5>Feb 2024 - June 2024</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos repudiandae, explicabo sed facilis hic totam assumenda atque quo quidem officiis magni voluptate eius? Non unde facilis accusantium saepe reiciendis rerum!</p>
+                  </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects">
+        <h1 class="title">My Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+
+
+                <div class="details-container color-container content">
+
+
+                    <div class="article-container">
+                        <img
+                        src="./assets/os.png"
+                        alt="Project 1"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title Project-title">Real Time Batch OS</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/michae1fl/Real_Time_Batch_Operating_System_Program'">
+                            Github
+                        </button>
+                    </div>
+
+
+                </div>
+
+
+                <div class="details-container color-container">
+
+
+                    <div class="article-container">
+                        <img
+                        src="./assets/network.png"
+                        alt="Project 2"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title Project-title">Network Broadcasting Program</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/michae1fl/Network_Broadcasting_Program'">
+                            Github
+                        </button>
+                    </div>
+
+
+                </div>
+
+
+                <div class="details-container color-container">
+
+
+                    <div class="article-container">
+                        <img
+                        src="./assets/basic.png"
+                        alt="Project 3"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title Project-title">BFS Word Melt Solver</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/michae1fl/BFS_Word_Melt_Program'">
+                            Github
+                        </button>
+                    </div>
+
+                    
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== CONTACTS SECTION ==================== -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img
+                src="./assets/email.png"
+                alt="Email Icon"
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:femilawalmichael@gmail.com">femilawalmichael@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img
+                src="./assets/linkedin.png"
+                alt="LinkedIn Icon"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/femilawalmichael">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer">
+        <div class="footer-text">
+            <p>© 2024 Michael Femi-Lawal | All rights reserved.</p>
+        </div>
+      </footer>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script src="script.js"> </script> 
+</body>
+</html>
